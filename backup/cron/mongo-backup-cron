@@ -1,0 +1,2 @@
+# backup diario 4am
+00 04 * * * /backup/src/job-backup.sh >> /backup/log/job-backup-log.log 2>&1

@@ -32,3 +32,6 @@ RUN crontab /backup/cron/mongo-backup-cron
 
 # da permissão para o arquivo que será executado
 RUN chmod 0700  /backup/src/job-backup.sh
+
+# inicia seriço e variáveis para o cron
+CMD ["/backup/src/cron.sh"]
